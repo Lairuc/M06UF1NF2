@@ -1,0 +1,3 @@
+John,Doe,1200,false
+Mike,McConnell,800,true
+Iñaki,Txalepa,1950,true
