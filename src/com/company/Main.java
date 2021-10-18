@@ -1,5 +1,9 @@
 package com.company;
 
+import java.util.ArrayList;
+
+import static java.lang.Thread.sleep;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         //NumsToFile1 ntf1 = new NumsToFile1();
@@ -25,10 +29,23 @@ public class Main {
 
         // Compta Vocals
         ComptaVocals covo = new ComptaVocals("treballadors.txt", "nouFitxerComptaVocals02.txt");
-         */
+
 
         // RecordsTextToCSV
         String[][] dades = RecordsTextToCSV.llegirFitxer("registres.txt");
         dades.toString();
+
+
+        // File Types
+        FileTypes.writeData("tipusDeDades.txt");
+         */
+
+        // Object Stream Example
+        ObjectStreamExample ose = new ObjectStreamExample();
+        ose.introDades();
+        //sleep(1000);
+        ArrayList<Persona> persons = ose.mostraDades();
+        System.out.println( persons.toString() );
+
     }
 }
