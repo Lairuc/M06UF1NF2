@@ -38,14 +38,23 @@ public class Main {
 
         // File Types
         FileTypes.writeData("tipusDeDades.txt");
-         */
 
-        // Object Stream Example
+
+        // e17 - Object Stream Example
         ObjectStreamExample ose = new ObjectStreamExample();
         ose.introDades();
         //sleep(1000);
         ArrayList<Persona> persons = ose.mostraDades();
         System.out.println( persons.toString() );
 
+
+        // RandomAccessFile - Canvi de Lletra
+        CanviLletra.canvi("registres.txt", 'e');
+         */
+
+        // RAF - intro dades
+        RAFdata.introDades();
+        RAFdata.afegirRegistre(7, "De Gea", 10, 1300.0);
+        RAFdata.llegirDades();
     }
 }
