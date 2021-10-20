@@ -47,5 +47,4 @@ public class Persona implements Serializable {
                 ", casat=" + casat +
                 '}';
     }
-
 }

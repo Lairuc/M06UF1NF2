@@ -26,10 +26,11 @@ public class ObjectStreamExample {
 
         Persona p;
         ObjectInputStream ois = new ObjectInputStream( new FileInputStream("object.data"));
+
         while (( p = (Persona) ois.readObject() ) != null ) {
             persones.add(p);
+            System.out.println( "DINS: " + p.toString() );
         }
-        System.out.println( "DINS: " + persones.toString() );
         return persones;
     }
 }
